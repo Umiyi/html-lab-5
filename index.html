@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vladyslav Demianets | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- FIXED FIGMA LINK -->
+<a class="figma-link" href="https://www.figma.com/" target="_blank">
+  Figma template
+</a>
+
+<!-- LAB LINKS (DOTS) -->
+<div class="lab-dots">
+  <button class="dot" data-url="https://github.com/Umiyi/html-lab-1">1</button>
+  <button class="dot" data-url="https://github.com/Umiyi/html-lab-3">3</button>
+  <button class="dot" data-url="https://github.com/Umiyi/html-lab-4">4</button>
+  <button class="dot" data-url="https://github.com/Umiyi/html-lab-5">5</button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__content">
+    <div class="logo">Vladyslav Demianets</div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero__content">
+    <div class="hero__text">
+      <h1>Hello, I’m <span>Vladyslav Demianets</span></h1>
+      <p>
+        Computer Engineering student focused on modern web development
+        and user interface design.
+      </p>
+
+      <div class="hero__buttons">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- PHOTO -->
+    <div class="hero__image">
+      <img src="img/me.jpg" alt="Vladyslav Demianets" class="avatar-img">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      I am a 4th-year student at the State University of Information and
+      Communication Technologies, majoring in Computer Engineering.
+      I am interested in web development, user interface design, and
+      modern web technologies.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services__grid">
+      <div class="service-card">Web Design</div>
+      <div class="service-card">Front-end Development</div>
+      <div class="service-card">UI for Mobile & Web</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects__grid">
+      <a class="project-card" href="https://github.com/Umiyi/html-lab-1" target="_blank">
+        Project 1
+        <small>HTML Basics</small>
+      </a>
+
+      <a class="project-card" href="https://github.com/Umiyi/html-lab-3" target="_blank">
+        Project 3
+        <small>YouTube Layout</small>
+      </a>
+
+      <a class="project-card" href="https://github.com/Umiyi/html-lab-4" target="_blank">
+        Project 4
+        <small>Weekly Planner</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <form class="contact__form">
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="button" class="btn primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 Vladyslav Demianets
+</footer>
+
+<!-- JS for lab dots -->
+<script>
+  document.querySelectorAll('.dot').forEach(dot => {
+    dot.addEventListener('click', () => {
+      window.open(dot.dataset.url, '_blank');
+    });
+  });
+</script>
+
+</body>
+</html>
